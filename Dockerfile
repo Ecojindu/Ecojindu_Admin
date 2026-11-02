@@ -12,7 +12,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # NEXT_PUBLIC_* is inlined at build time — pass with --build-arg on Cloud Build.
-ARG NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+ARG NEXT_PUBLIC_API_BASE_URL=https://ecojindu-backend-480235407496.us-central1.run.app
 ARG NEXT_PUBLIC_SITE_URL=http://localhost:3001
 ARG NEXT_PUBLIC_SUPPORT_EMAIL=jinduinc@gmail.com
 ARG NEXT_PUBLIC_SUPPORT_PHONE="+234 815 447 1570"
