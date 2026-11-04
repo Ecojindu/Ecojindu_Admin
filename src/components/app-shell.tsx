@@ -11,6 +11,7 @@ import {
   LayoutDashboard,
   LogOut,
   Menu,
+  MessageSquare,
   QrCode,
   Settings,
   Sparkles,
@@ -43,6 +44,7 @@ const OPERATIONS_NAV: { group: string; items: NavItem[] }[] = [
     items: [
       { href: "/trips", label: "Trips & timetable", icon: CalendarClock },
       { href: "/bookings", label: "Bookings", icon: Ticket },
+      { href: "/whatsapp", label: "WhatsApp Chats", icon: MessageSquare },
       { href: "/charter", label: "Charter", icon: Bus },
       { href: "/manifest", label: "Manifests", icon: ClipboardList },
     ],
