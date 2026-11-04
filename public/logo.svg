@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- eShuttle Official Logo -->
+  <g transform="translate(40, 40) scale(3.2)">
+    <!-- Top Bar: Lime Green aerodynamic leaf curve -->
+    <path
+      d="M 23 20 C 23 10 31 4 43 4 L 96 4 L 89 20 Z"
+      fill="#91DF2C"
+    />
+    <!-- Middle Bar: Forest Green speed parallelogram -->
+    <path
+      d="M 24 24 L 91 24 L 84 40 L 17 40 Z"
+      fill="#1A8B60"
+    />
+    <!-- Bottom Bar: Forest Green with leaf curve tip -->
+    <path
+      d="M 15 44 L 82 44 C 74 54 62 60 48 60 L 8 60 Z"
+      fill="#1A8B60"
+    />
+  </g>
+
+  <!-- Wordmark: eShuttle SM -->
+  <g transform="translate(60, 290)">
+    <!-- 'e' in lime green -->
+    <text
+      x="0"
+      y="54"
+      font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif"
+      font-size="68"
+      font-weight="300"
+      font-style="italic"
+      fill="#91DF2C"
+    >e</text>
+    <!-- 'Shuttle' in dark green -->
+    <text
+      x="42"
+      y="54"
+      font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif"
+      font-size="58"
+      font-weight="400"
+      letter-spacing="0.02em"
+      fill="#1A8B60"
+    >Shuttle</text>
+    <!-- 'SM' superscript -->
+    <text
+      x="254"
+      y="22"
+      font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif"
+      font-size="16"
+      font-weight="600"
+      fill="#1A8B60"
+    >SM</text>
+  </g>
+</svg>
+

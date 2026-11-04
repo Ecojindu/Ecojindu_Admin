@@ -44,9 +44,11 @@ export default function DriverLayout({ children }: { children: React.ReactNode }
     <div className="flex min-h-dvh flex-col bg-background">
       <header className="sticky top-0 z-20 border-b border-white/10 bg-forest-deep px-4 py-3 text-white">
         <div className="mx-auto flex max-w-lg items-center gap-3">
-          <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10">
-            <LeafMark className="size-5 text-leaf" />
-          </span>
+          <img
+            src="/images/logo-mark.png"
+            alt="eShuttle"
+            className="h-8 w-auto shrink-0 object-contain"
+          />
           <div className="min-w-0 flex-1 leading-tight">
             <p className="truncate text-sm font-bold">{user?.full_name}</p>
             <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-leaf-light">

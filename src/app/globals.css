@@ -9,10 +9,12 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    font-family: var(--font-sans, "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
   }
 
   body {
-    @apply bg-background text-ink antialiased;
+    @apply bg-background text-ink antialiased font-sans;
+    font-family: var(--font-sans, "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
     text-rendering: optimizeLegibility;
   }
 
@@ -93,5 +95,13 @@
   /* Wide tables scroll inside their own container — the page never does. */
   .scroll-x {
     @apply -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0;
+  }
+  /* Hide scrollbars across Chrome, Safari, Firefox, Edge while preserving scroll */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

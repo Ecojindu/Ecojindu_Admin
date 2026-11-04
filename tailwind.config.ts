@@ -43,7 +43,17 @@ const config: Config = {
         muted: { DEFAULT: "#F1F3F0", foreground: "#8A918D" },
       },
       borderRadius: { lg: "0.875rem", md: "0.625rem", sm: "0.375rem", xl: "1.125rem", "2xl": "1.375rem" },
-      fontFamily: { sans: ["var(--font-sans)", "system-ui", "sans-serif"] },
+      fontFamily: {
+        sans: [
+          'var(--font-sans, "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif)',
+          "Plus Jakarta Sans",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
+      },
       fontSize: {
         "display-sm": ["1.75rem", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
         "display-md": ["2.25rem", { lineHeight: "1.15", letterSpacing: "-0.025em" }],

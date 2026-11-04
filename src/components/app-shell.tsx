@@ -90,16 +90,17 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           open ? "translate-x-0" : "-translate-x-full",
         )}
       >
-        <div className="flex h-16 items-center gap-2.5 border-b border-white/[0.08] px-5">
-          <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-white/10">
-            <LeafMark className="size-[18px] text-leaf" />
-          </span>
-          <div className="min-w-0 leading-none">
-            <p className="truncate text-sm font-extrabold text-white">Ecojindu</p>
-            <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-leaf-light">
-              Operations
-            </p>
-          </div>
+        <div className="flex h-16 items-center justify-between border-b border-white/[0.08] px-5">
+          <Link href="/" className="flex items-center gap-2.5 min-w-0" aria-label="eShuttle Operations">
+            <img
+              src="/images/logo-horizontal-light.png"
+              alt="eShuttle"
+              className="h-7 w-auto object-contain"
+            />
+            <span className="rounded bg-leaf/20 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.16em] text-leaf-light">
+              Ops
+            </span>
+          </Link>
           <button
             onClick={() => setOpen(false)}
             className="tap-target -mr-2 ml-auto grid place-items-center rounded-lg text-cream-100/70 lg:hidden"
@@ -109,14 +110,17 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </button>
         </div>
 
-        <nav className="flex-1 overflow-y-auto px-3 py-4" aria-label="Operations">
+        <nav
+          className="flex-1 overflow-y-auto no-scrollbar [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden px-3 py-4"
+          aria-label="Operations"
+        >
           {OPERATIONS_NAV.map((section) => {
             const items = section.items.filter((i) => !i.superAdminOnly || isSuperAdmin);
             if (items.length === 0) return null;
 
             return (
               <div key={section.group} className="mb-5">
-                <p className="px-3 pb-2 text-[10px] font-bold uppercase tracking-[0.14em] text-cream-100/35">
+                <p className="px-3 pb-2 text-[10px] font-bold uppercase tracking-[0.14em] text-white">
                   {section.group}
                 </p>
                 <ul className="space-y-0.5">
@@ -130,8 +134,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                           className={cn(
                             "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
                             active
-                              ? "bg-moss text-white"
-                              : "text-cream-100/70 hover:bg-white/[0.07] hover:text-white",
+                              ? "bg-white text-forest-deep font-semibold shadow-sm"
+                              : "text-white/80 hover:bg-white/[0.07] hover:text-white",
                           )}
                           aria-current={active ? "page" : undefined}
                         >
@@ -180,7 +184,16 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           >
             <Menu className="size-5" aria-hidden />
           </button>
-          <span className="text-sm font-bold text-forest">Ecojindu Operations</span>
+          <div className="flex items-center gap-2">
+            <img
+              src="/images/logo-horizontal.png"
+              alt="eShuttle"
+              className="h-6 w-auto object-contain"
+            />
+            <span className="rounded bg-moss/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.16em] text-moss">
+              Operations
+            </span>
+          </div>
         </header>
 
         <main id="main" className="flex-1 px-4 py-6 lg:px-8 lg:py-8">

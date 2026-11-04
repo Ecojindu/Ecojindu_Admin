@@ -26,8 +26,12 @@ export function WrongRole({ area }: { area: "operations" | "driver" }) {
   return (
     <div className="grid min-h-dvh place-items-center px-5 py-12">
       <div className="w-full max-w-md text-center">
-        <span className="mx-auto grid size-11 place-items-center rounded-xl bg-forest-deep">
-          <LeafMark className="size-6 text-leaf" />
+        <span className="mx-auto grid size-12 place-items-center rounded-xl bg-forest-deep p-2">
+          <img
+            src="/images/logo-mark.png"
+            alt="eShuttle"
+            className="size-7 object-contain"
+          />
         </span>
 
         <span className="mx-auto mt-7 grid size-14 place-items-center rounded-2xl bg-amber-light">

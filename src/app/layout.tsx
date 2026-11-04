@@ -14,8 +14,15 @@ const sans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Ecojindu Operations", template: "%s · Ecojindu Operations" },
-  description: "Operations dashboard and driver portal for Ecojindu Shuttle.",
+  title: { default: "eShuttle Operations", template: "%s · eShuttle Operations" },
+  description: "Operations dashboard and driver portal for eShuttle.",
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/icons/icon-192.png" }],
+  },
   // Internal tool — keep it out of search results entirely.
   robots: { index: false, follow: false, nocache: true },
 };
@@ -29,8 +36,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-NG" className={sans.variable}>
-      <body>
+    <html lang="en-NG" className={`${sans.variable} ${sans.className}`}>
+      <body className={`${sans.className} font-sans`}>
         <a href="#main" className="skip-link">
           Skip to main content
         </a>

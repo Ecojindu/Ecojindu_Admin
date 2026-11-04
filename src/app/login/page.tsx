@@ -63,15 +63,14 @@ function LoginForm() {
       {/* Brand panel */}
       <div className="relative hidden flex-col justify-between bg-forest-deep p-12 text-cream-100 lg:flex">
         <div className="flex items-center gap-3">
-          <span className="grid size-10 place-items-center rounded-xl bg-white/10">
-            <LeafMark className="size-6 text-leaf" />
+          <img
+            src="/images/logo-horizontal-light.png"
+            alt="eShuttle"
+            className="h-9 w-auto object-contain"
+          />
+          <span className="rounded bg-leaf/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.18em] text-leaf-light">
+            Operations
           </span>
-          <div className="leading-none">
-            <p className="text-base font-extrabold text-white">Ecojindu</p>
-            <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-leaf-light">
-              Operations
-            </p>
-          </div>
         </div>
 
         <div>
@@ -95,9 +94,11 @@ function LoginForm() {
       <div className="flex items-center justify-center px-5 py-12">
         <div className="w-full max-w-sm">
           <div className="mb-8 lg:hidden">
-            <span className="grid size-10 place-items-center rounded-xl bg-forest-deep">
-              <LeafMark className="size-6 text-leaf" />
-            </span>
+            <img
+              src="/images/logo-horizontal.png"
+              alt="eShuttle"
+              className="h-8 w-auto object-contain"
+            />
           </div>
 
           <h1 className="text-display-sm font-extrabold text-forest">Staff sign in</h1>
