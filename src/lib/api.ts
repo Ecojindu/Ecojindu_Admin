@@ -258,7 +258,8 @@ export const api = {
       method: "POST",
       body: { qr_token, trip_id: trip_id ?? null },
     }),
-  ticketImageUrl: (ref: string) => `${config.apiBaseUrl}/v1/tickets/${ref}/qr.png`,
+  ticketImageUrl: (ref: string, token?: string) =>
+    `${config.apiBaseUrl}/v1/tickets/${ref}/qr.png${token ? `?token=${encodeURIComponent(token)}` : ""}`,
 
   // ── Charter ──
   charters: (status?: string) =>

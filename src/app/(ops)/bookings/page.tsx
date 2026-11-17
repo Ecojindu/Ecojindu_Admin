@@ -341,7 +341,10 @@ function BookingDrawer({ booking, onClose }: { booking: Booking; onClose: () => 
             Boarding pass
           </p>
           <img
-            src={api.ticketImageUrl(booking.booking_ref)}
+            src={
+              booking.ticket?.qr_image_url ||
+              api.ticketImageUrl(booking.booking_ref, booking.ticket?.qr_token)
+            }
             alt={`QR ticket for ${booking.booking_ref}`}
             width={180}
             height={180}
