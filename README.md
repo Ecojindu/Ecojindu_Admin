@@ -33,10 +33,10 @@ Sign in at **http://localhost:3001/login**:
 
 | Role | Email | Password | Lands on |
 |---|---|---|---|
-| Super admin | `admin@ecojindu.ng` | `Ecojindu@2026` | `/` |
-| Operations | `ops@ecojindu.ng` | `Ecojindu@2026` | `/` |
-| Driver | `emeka.driver@ecojindu.ng` | `Driver@2026` | `/driver` |
-| Driver | `uche.driver@ecojindu.ng` | `Driver@2026` | `/driver` |
+| Super admin | `admin@eshuttle.ng` | `Ecojindu@2026` | `/` |
+| Operations | `ops@eshuttle.ng` | `Ecojindu@2026` | `/` |
+| Driver | `emeka.driver@eshuttle.ng` | `Driver@2026` | `/driver` |
+| Driver | `uche.driver@eshuttle.ng` | `Driver@2026` | `/driver` |
 
 A passenger account is rejected at sign-in with a clear message. A driver who
 lands on an operations URL is redirected to their own portal rather than shown a

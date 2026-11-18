@@ -110,7 +110,7 @@ function LoginForm() {
             <Field label="Email or phone number" htmlFor="identifier">
               <Input
                 autoComplete="username"
-                placeholder="ops@ecojindu.ng"
+                placeholder="ops@eshuttle.ng"
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
                 invalid={Boolean(error)}
